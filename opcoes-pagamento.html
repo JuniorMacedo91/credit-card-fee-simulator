@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções de pagamento</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="pay display-flex">
+        <div class="container display-flex">
+            <div class="container-blur">
+                <div class="container-content">
+                    <h1 id="greetings"></h1>
+
+                    <h2>Qual opção de pagamento?</h2>
+                    
+                    <a href="./pagamento-minimo.html">
+                        <button class="button btn-1" >Pagamento mínimo</button>
+                    </a>
+
+                    <img class="icon-inf" src="./assets/information.png" alt="ícone informação">
+                
+                    <a href="./pagamento-atrasado.html">
+                        <button class="button btn-2">Após vencimento</button>
+                    </a>
+                    
+                    <img class="icon-inf" src="./assets/information.png" alt="ícone informação">
+                </div>
+                <section id="minimo">
+
+                    <h1>Pagamento mínimo</h1>
+                        <ul>
+                            <li>É o valor cobrado referente ao  mínimo da fatura.</li>
+                            <li>O pagamento pode ser feito até a data do vencimento.</li>
+                            <li>Em média, o valor estipulado para pagamento mínimo é de 15% em relação ao valor total da fatura.</li>
+                            <li>Uma vez que o cliente opte por pagar o valor mínimo, os juros serão calculados em relação ao valor em aberto e lançado na próxima fatura, totalizando juros, valor em aberto e valor atual da próxima fatura.</li>
+                            <li>A porcentagem dos juros fica a critério de cada banco.</li>
+                        </ul>
+                        <div class="close-btn" style="font-size: 2rem; cursor: pointer;">&times;</div>
+                </section>
+                <section id="atrasado">
+                    
+                    <h1>Pagamento atrasado</h1>
+                    <ul>
+                        <li>Valor cobrado ao atrasar fatura, a partir de um dia em atraso.</li>
+                        <ul>Os juros incluem:
+                            <li><strong style="text-transform: uppercase;">Juros rotativo</strong>: Porcentagem estipulada de acordo com cada banco</li>
+                            <li><strong style="text-transform: uppercase;">Juros de mora</strong>: Cobrado 0,0333% ao dia em atraso. Totalizando 1% ao mês.</li>
+                            <li><strong style="text-transform: uppercase;">Juros de multa</strong>: 2% referente ao valor da fatura</li>
+                        </ul>
+                    </ul>
+                    <div class="close-btn" style="font-size: 2rem; cursor: pointer;">&times;</div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
