@@ -65,7 +65,7 @@ function late(){
         let multa = totalFatura * 0.02
         let mora =(totalFatura * calcData() * 0.00033)
         let totalPag = totalJuros + multa + mora
-)
+
         document.querySelector('.mora').innerHTML = parseFloat(mora.toFixed(2))
         document.querySelector('.valorMulta').innerHTML = parseFloat(multa.toFixed(2))
         document.querySelector('.totalJuros').innerHTML = parseFloat(totalJuros.toFixed(2))
