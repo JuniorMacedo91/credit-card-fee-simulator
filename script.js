@@ -1,4 +1,5 @@
 
+
 // Registra nome
 function nameHome(){
     let name = document.querySelector("#text_name").value
@@ -14,6 +15,15 @@ function nameAlert(){
     } else {
         location.href = "./opcoes-pagamento.html"
     }
+}
+
+// Converter para moeda Real
+function realCurrency(number){
+    let value = number
+    
+    let result = value.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+
+    return result
 }
 
 
@@ -40,11 +50,11 @@ function minimum(){
         let totalJuros = totalTaxa + iof
         let totalPag = totalAberto + totalTaxa
 
-        document.querySelector('.totalAberto').innerHTML = parseFloat(totalAberto.toFixed(2))
-        document.querySelector('.totalTaxa').innerHTML = `R$ ${totalTaxa.toFixed(2)}`
-        document.querySelector('.iof').innerHTML = (iof.toFixed(2))
-        document.querySelector('.totalJuros').innerHTML = totalJuros.toFixed(2)
-        document.querySelector('#totalPag').innerHTML = (totalPag.toFixed(2))
+        document.querySelector('.totalAberto').innerHTML = realCurrency(totalAberto)
+        document.querySelector('.totalTaxa').innerHTML = realCurrency(totalTaxa)
+        document.querySelector('.iof').innerHTML = realCurrency(iof)
+        document.querySelector('.totalJuros').innerHTML = realCurrency(totalJuros)
+        document.querySelector('#totalPag').innerHTML = realCurrency(totalPag)
         
     }
 }
@@ -84,18 +94,14 @@ function late(){
         let totalJuros = totalTaxa + mora + multa + iof
         let totalPag =  totalJuros + totalFatura
         
-        document.querySelector('.totalTaxa').innerHTML = parseFloat(totalTaxa.toFixed(2))
-        document.querySelector('.mora').innerHTML = parseFloat(mora.toFixed(2))
-        document.querySelector('.valorMulta').innerHTML = parseFloat(multa.toFixed(2))
-        document.querySelector('.iof').innerHTML = parseFloat(iof.toFixed(2))
-        document.querySelector('.totalJuros').innerHTML = parseFloat(totalJuros.toFixed(2))
-        document.querySelector('.totalPag').innerHTML = parseFloat(totalPag.toFixed(2))
+        document.querySelector('.totalTaxa').innerHTML = realCurrency(totalTaxa)
+        document.querySelector('.mora').innerHTML =  realCurrency(mora)
+        document.querySelector('.valorMulta').innerHTML = realCurrency(multa)
+        document.querySelector('.iof').innerHTML = realCurrency(iof)
+        document.querySelector('.totalJuros').innerHTML = realCurrency(totalJuros)
+        document.querySelector('.totalPag').innerHTML = realCurrency(totalPag)
     }
     
 }
     
-
-
-
-
 
