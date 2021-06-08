@@ -1,13 +1,11 @@
-
-
-// Registra nome
+// Get name
 function nameHome(){
     let name = document.querySelector("#text_name").value
     document.querySelector('.text_input').innerHTML = `Olá, ${name}!`
 }
 
 
-// Informe se não digitou nome
+// Requesting to write name
 function nameAlert(){
     let name = document.querySelector('#text_name').value
     if (name == '' ){
@@ -17,7 +15,7 @@ function nameAlert(){
     }
 }
 
-// Converter para moeda Real
+// Convert to  Real currency
 function realCurrency(number){
     let value = number
     
@@ -26,80 +24,79 @@ function realCurrency(number){
     return result
 }
 
-
-// Calcula juros de pagamento mínimo
+// Calcule minimum rate
 function minimum(){
-    let totalFatura = document.querySelector('#totalFatura').value
-    let valorMin = document.querySelector('#valorMin').value
-    let pagMin = totalFatura * 0.15
+    let totalInvoice = document.querySelector('#totalInvoice').value
+    let minValue = document.querySelector('#minValue').value
+    let minPay = totalInvoice * 0.15
     let date = document.querySelector('#date').value
-    let taxa =  document.querySelector('#taxa').value
+    let rate =  document.querySelector('#rate').value
 
-    if(totalFatura == '' || valorMin == '' || date == '' ||taxa == ''){
+    if(totalInvoice == '' || minValue == '' || date == '' ||rate == ''){
         alert('Preencha todos os campos')
-    } else if (valorMin < pagMin){
-        alert(`Valor mínimo estipulado é R$ ${pagMin.toFixed(2)}`)
+    } else if (minValue < minPay){
+        alert(`Valor mínimo estipulado é R$ ${minPay.toFixed(2)}`)
     } else{
         let iofMensal = 0.0038
         let iofDiario = 0.000082
         let diasAberto = 30
 
-        let totalAberto = totalFatura - valorMin
-        let totalTaxa = totalAberto * (taxa / 100)
-        let iof = (totalAberto * iofMensal) + (totalAberto * iofDiario * diasAberto)
-        let totalJuros = totalTaxa + iof
-        let totalPag = totalAberto + totalTaxa
+        let totalLeft = totalInvoice - minValue
+        let totalRate = totalLeft * (rate / 100)
+        let iof = (totalLeft * iofMensal) + (totalLeft * iofDiario * diasAberto)
+        let sumRate = totalRate + iof
+        let totalPay = totalLeft + totalRate
 
-        document.querySelector('.totalAberto').innerHTML = realCurrency(totalAberto)
-        document.querySelector('.totalTaxa').innerHTML = realCurrency(totalTaxa)
-        document.querySelector('.iof').innerHTML = realCurrency(iof)
-        document.querySelector('.totalJuros').innerHTML = realCurrency(totalJuros)
-        document.querySelector('#totalPag').innerHTML = realCurrency(totalPag)
+        document.querySelector('#totalLeft').innerHTML = realCurrency(totalLeft)
+        document.querySelector('#totalRate').innerHTML = realCurrency(totalRate)
+        document.querySelector('#iof').innerHTML = realCurrency(iof)
+        document.querySelector('#sumRate').innerHTML = realCurrency(sumRate)
+        document.querySelector('#totalPay').innerHTML = realCurrency(totalPay)
         
     }
 }
 
 
-// Calcula juros de pagamento em atraso
+// Calcule the late payments rate
 function late(){
-    let totalFatura = document.querySelector('#totalFatura').value
-    let data1 = document.querySelector('#dataVenc').value
-    let data2 = document.querySelector('#dataPag').value
-    let taxa =  document.querySelector('#taxa').value / 100
-    let diasAtraso = document.querySelector('.diasAtraso')
+    let totalInvoice = document.querySelector('#totalInvoice').value
+    let expirationDate = document.querySelector('#expirationDate').value
+    let payDate = document.querySelector('#payDate').value
+    let rate =  document.querySelector('#rate').value / 100
+    let delayDay = document.querySelector('#delayDay')
 
-    function calcData(){
-        dataVenc = new Date(data1)
-        dataPag = new Date(data2)
+    function calcDate(){
+        expiration = new Date(expirationDate)
+        payDay = new Date(payDate)
 
-        let definirTempo = Math.abs(dataPag - dataVenc)
-        let tempoDia = 1000 * 60 * 60 * 24 
-        let definirDias = definirTempo / tempoDia
+        let defTime = Math.abs(payDay - expiration)
+        let dayTime = 1000 * 60 * 60 * 24 
+        let defDays = defTime / dayTime
 
-        return definirDias
+        return defDays
     }
 
-    diasAtraso.innerHTML = calcData()
+    delayDay.innerHTML = calcDate()
 
-    if(totalFatura == '' || data1 == '' || data2 == '' ||taxa == ''){
+    if(totalInvoice == '' || expirationDate == '' || payDate == '' ||rate == ''){
         alert('Preencha todos os campos')
     } else {
-        let iofMensal = 0.0038
-        let iofDiario = 0.000082
+        let iofMonth = 0.0038
+        let iofDay = 0.000082
 
-        let totalTaxa = totalFatura * (1 + taxa)**(0.33) - totalFatura
-        let mora = (totalFatura * calcData() * 0.00033)
-        let multa = totalFatura * 0.02
-        let iof = (totalFatura * iofMensal) + (totalFatura * iofDiario * calcData())
-        let totalJuros = totalTaxa + mora + multa + iof
-        let totalPag =  totalJuros + totalFatura
+        let totalFee = totalInvoice * (1 + rate)**(0.33) - totalInvoice
+        let dayRate = (totalInvoice * calcDate() * 0.00033)
+        let fee = totalInvoice * 0.02
+        let iof = (totalInvoice * iofMonth) + (totalInvoice * iofDay * calcDate())
+        let totalRate = totalFee + dayRate + fee + iof
+        let totalPay = parseFloat(totalInvoice) + parseFloat(totalRate)
         
-        document.querySelector('.totalTaxa').innerHTML = realCurrency(totalTaxa)
-        document.querySelector('.mora').innerHTML =  realCurrency(mora)
-        document.querySelector('.valorMulta').innerHTML = realCurrency(multa)
-        document.querySelector('.iof').innerHTML = realCurrency(iof)
-        document.querySelector('.totalJuros').innerHTML = realCurrency(totalJuros)
-        document.querySelector('.totalPag').innerHTML = realCurrency(totalPag)
+        document.querySelector('#totalFee').innerHTML = realCurrency(totalFee)
+        document.querySelector('#dayRate').innerHTML =  realCurrency(dayRate)
+        document.querySelector('#fee').innerHTML = realCurrency(fee)
+        document.querySelector('#iof').innerHTML = realCurrency(iof)
+        document.querySelector('#totalRate').innerHTML = realCurrency(totalRate)
+        document.querySelector('#totalPay').innerHTML = realCurrency(totalPay)
     }
     
 }
