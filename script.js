@@ -45,7 +45,7 @@ function minimum(){
         let totalRate = totalLeft * (rate / 100)
         let iof = (totalLeft * iofMensal) + (totalLeft * iofDiario * diasAberto)
         let sumRate = totalRate + iof
-        let totalPay = parseFloat (totalLeft) + parseFloat (totalRate)
+        let totalPay = parseFloat (sumRate) + parseFloat (totalLeft)
 
         document.querySelector('#totalLeft').innerHTML = realCurrency(totalLeft)
         document.querySelector('#totalRate').innerHTML = realCurrency(totalRate)
