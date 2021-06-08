@@ -15,17 +15,17 @@
             <div class="container-blur">
                 <div class="content-minimun">
                     <div class="title"><h1>Pagamento Mínimo</h1></div>
-                    <input type="number" name="totalFatura" id="totalFatura" placeholder="valor total da fatura">
-                    <input type="number" name="valorMin" id="valorMin" placeholder="pagamento mínimo">
+                    <input type="number" name="totalInvoice" id="totalInvoice" placeholder="valor total da fatura">
+                    <input type="number" name="minValue" id="minValue" placeholder="pagamento mínimo">
                     <p style="font-size: 10px;">Data vencimento</p>
                     <input type="date" name="date" id="date" style="font-size: 15px;">
-                    <input type="number" name="taxa" id="taxa" placeholder="juros rotativo">
+                    <input type="number" name="rate" id="rate" placeholder="juros rotativo">
                 </div>
             </div>
             <div class="card">
                 <div class="card-content1">
                     <p class="content-text">total a pagar</p>
-                    <p style="font-size: 1.8rem;" id="totalPag">R$ 0,00</p>
+                    <p style="font-size: 1.8rem;" id="totalPay">R$ 0,00</p>
 
                     <img class="sim-card" src="./assets/sim-card.png" alt="sim card" style="width: 35px;">
                     <img class="sim-card" src="./assets/wifi.png" alt="aproximação" style="width: 25px;">
@@ -36,16 +36,16 @@
                 <div class="card-content2">
 
                     <p class="content-text">valor em aberto</p>
-                    <p class="totalAberto">R$ 0,00</p>
+                    <p id="totalLeft">R$ 0,00</p>
 
                     <p class="content-text">Juros rotativo</p>
-                    <p class="totalTaxa">R$ 0,00</p>
+                    <p id="totalRate">R$ 0,00</p>
 
                     <p class="content-text">IOF</p>
-                    <p class="iof">R$ 0,00</p>
+                    <p id="iof">R$ 0,00</p>
 
                     <p class="content-text">total de juros</p>
-                    <p class="totalJuros">R$ 0,00</p>
+                    <p id="sumRate">R$ 0,00</p>
                     
                 </div>
             </div>
