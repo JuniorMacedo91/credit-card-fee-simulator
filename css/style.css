@@ -1,8 +1,4 @@
 /*Home*/
-h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
 
 #text_name{
     width: 250px;
@@ -15,9 +11,8 @@ h1{
     background-color: transparent;
 }
 
-.container-blur .enter{
-    position: absolute;
-    bottom: 7%;
+.enter{
+    margin-top: 1.5rem;
 }
 
 .button:hover{
@@ -26,8 +21,7 @@ h1{
     transform: translateY(-10px);
 }
 
-/*Pagamento*/
-
+/*Opções de Pagamento*/
 .pay .container-blur{
     display: flex;
     align-items: center;
@@ -35,99 +29,62 @@ h1{
 .pay h2{
     margin: 4rem auto;
     font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.pay a{
-    display: inline-block;
-}
-
-.pay .button{
-    font-size: 14px;
-    margin: 8px;
-}
-
-.icon-inf{
-    width: 16px;
-    cursor: pointer;
 }
 
 .pay section{
     position: absolute;
     border-radius: 20px;
     background-color: #010B40;
+    left: 0;
     display: none;
 }
 
-#minimo #atrasado{
-    display: none ;
-    padding: 10px;
+.pay button{
+    margin-top: 1rem;
 }
 
-.pag h1{
-    font-size: 2rem;
-    text-transform: uppercase;
-}
+/*Pagamento mínimo/ Atrasado*/
 
-.pay ul li{
-    margin: 1rem;
-    text-align: justify;
-    line-height: 1.3rem;
-}
-
-/*Pagamento mínimo*/
-
-.minimun .container-blur{
+.main .container-blur{
     position: absolute;
-    height: 320px;
-    top: 5%;
+    height: 300px;
+    top: 15px;
 }
 
-.minimun h1{
-    padding: 1rem;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+h1{
+    padding-bottom: 8px;
 }
 
-.content-minimun{
-    position: absolute;
-    top: 0;
-}
-
-.minimun input{
-    width: 80%;
+input{
+    width: 90%;
     margin-bottom: 1rem;
-    padding: 10px;
+    padding: 8px;
 
     border: none;
     outline: none;
     border-radius: 50px;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
 }
 
-.sim-card{
-    margin:1.5rem auto;
+.delayDay{
+    position: absolute;
+    top: 10px;
+    right: 8rem;
 }
 
-.card-content1{
-    position: absolute;
-    text-align: left;
+.sim-card{
+    width: 2.5rem;
+    margin:2.2rem;
+    margin-left: 0;
 }
 
 .card-content1 p{
-  text-align: left;
-}
-
-.card-content2{
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
+    text-align: left;
 }
 
 .card-content2 p{
@@ -147,11 +104,3 @@ h1{
     width: 2rem;
     cursor: pointer;
 }
-
-/*Após vencimento*/
-
-.dias-atraso{
-    font-size: 12px;
-    margin-bottom: 34px;
-}
-
