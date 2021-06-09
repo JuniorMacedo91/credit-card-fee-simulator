@@ -1,7 +1,9 @@
+
 // Get name
 function nameHome(){
     let name = document.querySelector("#text_name").value
     document.querySelector('.text_input').innerHTML = `Olá, ${name}!`
+
 }
 
 
@@ -14,6 +16,8 @@ function nameAlert(){
         location.href = "./opcoes-pagamento.html"
     }
 }
+
+
 
 // Convert to  Real currency
 function realCurrency(number){

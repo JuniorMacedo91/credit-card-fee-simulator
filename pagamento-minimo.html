@@ -10,28 +10,29 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="minimun display-flex">
+    <div class="main display-flex">
         <div class="container display-flex">
             <div class="container-blur">
-                <div class="content-minimun">
-                    <div class="title"><h1>Pagamento Mínimo</h1></div>
+                <div class="content">
+                    <div class="title"><h1>Mínimo</h1></div>
                     <input type="number" name="totalInvoice" id="totalInvoice" placeholder="valor total da fatura">
                     <input type="number" name="minValue" id="minValue" placeholder="pagamento mínimo">
                     <p style="font-size: 10px;">Data vencimento</p>
-                    <input type="date" name="date" id="date" style="font-size: 15px;">
+                    <input type="date" name="date" id="date" >
                     <input type="number" name="rate" id="rate" placeholder="juros rotativo">
                 </div>
             </div>
             <div class="card">
                 <div class="card-content1">
+
                     <p class="content-text">total a pagar</p>
-                    <p style="font-size: 1.8rem;" id="totalPay">R$ 0,00</p>
+                    <p style="font-size: 1.6rem;" id="totalPay">R$ 0,00</p>
 
-                    <img class="sim-card" src="./assets/sim-card.png" alt="sim card" style="width: 35px;">
-                    <img class="sim-card" src="./assets/wifi.png" alt="aproximação" style="width: 25px;">
+                    <img class="sim-card" src="./assets/sim-card.png" alt="sim card">
 
-                    <p >1234 5678 9101 1213</p>
-                    <p >Junior macedo</p>
+                    <p style="font-size: 14px;">1234 5678 9101 1213</p>
+                    <p style="font-size: 14px;">Junior macedo</p>
+
                 </div>
                 <div class="card-content2">
 
@@ -50,6 +51,8 @@
                 </div>
             </div>
             <div class="icons">
+
+                <a href="./index.html"><img src="./assets/home.png" alt="botão home"></a>
                 <a href="./opcoes-pagamento.html"><img src="./assets/back.png" alt="botão voltar"></a>
                 <img src="./assets/reset.png" alt="botão refazer">
                 <button class="button" onclick="minimum()">Simular</button>
