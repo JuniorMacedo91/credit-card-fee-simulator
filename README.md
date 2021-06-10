@@ -20,9 +20,7 @@ No JavaScript, foram criadas as funções:
 
  - [x] nameAlert(): Alerta o cliente a inserir o nome, na página inicial. Caso não insira, não é possível avançar a página;
  - [x] nameHome(): Faz uma saudadação ao inserir o nome;
- - [x] popUp1(): Mostra informações sobre os juros atribuidos ao pagamento mínimo;
- - [x] popUp2(): Mostra informações sobre os juros atribuidos ao pagamento em atraso total;
- - [x] popUp2(): Mostra informações sobre os juros atribuidos ao pagamento em atraso total;
+ - [x] popUp1 e 2(): Mostra informações sobre os juros de pagamento mínimo e após vencimento;
  - [x] calcDate(): Calcula os dias em atraso, de acordo com data de vencimento e data de pagamento;
  - [x] realCurrency(): Transforma os valores em moeda real;
  - [x] minimum(): Informa o valor mínimo permitido para pagamento, calcula juros e valor final, quando cliente opta pelo pagamento mínimo;
