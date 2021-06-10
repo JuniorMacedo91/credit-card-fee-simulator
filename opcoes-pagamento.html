@@ -15,34 +15,33 @@
             <div class="container-blur">
                 <div class="container-content">
 
-                    <h2>Qual opção de pagamento?</h2>
+                    <h2 >Qual opção de pagamento?</h2>
                     
                     <a href="./pagamento-minimo.html">
                         <button class="button btn-1" >Mínimo</button>
                     </a>
 
-                    <a id="minInf" href=""><img src="./assets/information.png" alt=""></a>
+                   <img src="./assets/information.png" alt="" onclick="popUp1()">
                 
-                    <a id="delayInf" href="./pagamento-atrasado.html">
+                    <a  id="delayInf" href="./pagamento-atrasado.html">
                         <button class="button btn-2">Após vencimento</button>
                     </a>
 
-                    <a href=""><img src="./assets/information.png" alt=""></a>
+                    <img src="./assets/information.png" alt="" onclick="popUp2()">
 
                 </div>
-                <section id="popupMinPay">
-
+                <section  id="popupMinPay" onclick="closePopup(this)" >
                     <h1>Pagamento mínimo</h1>
-                        <ul>
-                            <li>É o valor cobrado referente ao  mínimo da fatura.</li>
-                            <li>O pagamento pode ser feito até a data do vencimento.</li>
-                            <li>Em média, o valor estipulado para pagamento mínimo é de 15% em relação ao valor total da fatura.</li>
-                            <li>Uma vez que o cliente opte por pagar o valor mínimo, os juros serão calculados em relação ao valor em aberto e lançado na próxima fatura, totalizando juros, valor em aberto e valor atual da próxima fatura.</li>
-                            <li>A porcentagem dos juros fica a critério de cada banco.</li>
-                        </ul>
-                        <div class="close-btn" style="font-size: 2rem; cursor: pointer;">&times;</div>
+                    <ul>
+                        <li>É o valor cobrado referente ao  mínimo da fatura.</li>
+                        <li>O pagamento pode ser feito até a data do vencimento.</li>
+                        <li>Em média, o valor estipulado para pagamento mínimo é de 15% em relação ao valor total da fatura.</li>
+                        <li>Uma vez que o cliente opte por pagar o valor mínimo, os juros serão calculados em relação ao valor em aberto e lançado na próxima fatura, totalizando juros, valor em aberto e valor atual da próxima fatura.</li>
+                        <li>A porcentagem dos juros fica a critério de cada banco.</li>
+                        <div style="font-size: 2rem; cursor: pointer;">&times;</div>
+                    </ul>
                 </section>
-                <section id="popupLatePay">
+                <section id="popupLatePay" onclick="closePopup(this)">
                     
                     <h1>Pagamento atrasado</h1>
                     <ul>
@@ -54,7 +53,7 @@
                             <li>IOF: Imposto sobre Operações Financeiras</li>
                         </ul>
                     </ul>
-                    <div class="close-btn" style="font-size: 2rem; cursor: pointer;">&times;</div>
+                    <div style="font-size: 2rem; cursor: pointer;" >&times;</div>
                 </section>
             </div>
         </div>

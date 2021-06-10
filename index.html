@@ -17,9 +17,9 @@
                 <h1>Jurosfat</h1>
                 <p>Nunca foi tão fácil entender sobre juros de cartão</p>
 
-                <input type="text" name="text_name" id="text_name" placeholder="Nome" oninput="nameHome()" >
+                <input type="text" name="text_name" id="text_name" placeholder="Nome" oninput="nameHome(this)" >
 
-                <h2 class="text_input"></h2>
+                <h2 class="text_input" oninput="nameHome()"></h2>
                
                 <button class="button enter" onclick="nameAlert()">Entrar</button>
 

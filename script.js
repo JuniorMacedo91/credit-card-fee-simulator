@@ -3,9 +3,24 @@
 function nameHome(){
     let name = document.querySelector("#text_name").value
     document.querySelector('.text_input').innerHTML = `Olá, ${name}!`
-
 }
 
+
+
+// Open and close popups
+function popUp1(){
+    let box2 = document.getElementById('popupMinPay')
+    box2.style.display = 'block';
+}
+
+function popUp2(){
+    let box2 = document.getElementById('popupLatePay')
+    box2.style.display = 'block'
+}
+
+function closePopup(btn){
+    btn.style.display = "none"
+}
 
 // Requesting to write name
 function nameAlert(){
@@ -16,7 +31,6 @@ function nameAlert(){
         location.href = "./opcoes-pagamento.html"
     }
 }
-
 
 
 // Convert to  Real currency
