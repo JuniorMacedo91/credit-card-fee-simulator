@@ -25,7 +25,7 @@ No JavaScript, foram criadas as funções:
  - [x] popUp2(): Mostra informações sobre os juros atribuidos ao pagamento em atraso total;
  - [x] calcDate(): Calcula os dias em atraso, de acordo com data de vencimento e data de pagamento;
  - [x] realCurrency(): Transforma os valores em moeda real;
- - [x] minimum(): Informa o valor mínimo permitido para pgamento, calcula juros e valor final, quando cliente opta pelo pagamento mínimo;
+ - [x] minimum(): Informa o valor mínimo permitido para pagamento, calcula juros e valor final, quando cliente opta pelo pagamento mínimo;
  - [x] late(): Calcula juros e valor final, quando cliente opta pelo pagamento total atrasado;
 
 ## Técnicas de CSS:
