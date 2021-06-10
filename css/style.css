@@ -5,10 +5,11 @@
     margin: 5rem;
     padding: 10px;
     font-size: 1.2rem;
-    border: none;
+    border-radius: 0;
     border-bottom: 1px solid white;
-    outline: none;
     background-color: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
 }
 
 .enter{
@@ -33,9 +34,23 @@
 
 .pay section{
     position: absolute;
+    left: 0;
+    padding: 5px;
+    font-size: 12px;
     border-radius: 20px;
     background-color: #010B40;
-    left: 0;
+}
+
+ul, li{
+    text-align: left;
+    margin-top: 1rem;
+}
+
+#popupMinPay{
+    display: none;
+}
+
+#popupLatePay{
     display: none;
 }
 
@@ -75,6 +90,11 @@ input{
     position: absolute;
     top: 10px;
     right: 8rem;
+}
+
+img{
+    width: 1rem;
+    margin-left: 5px;
 }
 
 .sim-card{
