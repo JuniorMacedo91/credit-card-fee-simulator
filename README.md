@@ -18,8 +18,7 @@ Seu objetivo final é garantir um planejamento financeiro.
 
 No JavaScript, foram criadas as funções:
 
- - [x] nameAlert(): Alerta o cliente a inserir o nome, na página inicial. Caso não insira, não é possível avançar a página;
- - [x] nameHome(): Faz uma saudadação ao inserir o nome;
+ - [x] getName(): Alerta o cliente a inserir o nome, na página inicial. Caso não insira, não é possível avançar a página;
  - [x] popUp1 e 2(): Mostra informações sobre os juros de pagamento mínimo e após vencimento;
  - [x] calcDate(): Calcula os dias em atraso, de acordo com data de vencimento e data de pagamento;
  - [x] realCurrency(): Transforma os valores em moeda real;
