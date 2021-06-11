@@ -27,9 +27,12 @@
     display: flex;
     align-items: center;
 }
-.pay h2{
-    margin: 4rem auto;
-    font-size: 2rem;
+
+.pay h1{
+    font-size: 2.5rem;
+}
+.pay h3{
+    padding: 5rem 0px;
 }
 
 .pay section{
@@ -66,10 +69,6 @@ ul, li{
     top: 15px;
 }
 
-h1{
-    padding-bottom: 8px;
-}
-
 input{
     width: 90%;
     margin-bottom: 1rem;
@@ -88,18 +87,19 @@ input{
 
 .delayDay{
     position: absolute;
-    top: 10px;
-    right: 8rem;
+    top: 7px;
+    right: 6rem;
 }
 
 img{
     width: 1rem;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .sim-card{
     width: 2.5rem;
-    margin:2.2rem;
+    margin:2.8rem;
     margin-left: 0;
 }
 
