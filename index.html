@@ -7,6 +7,7 @@
     <title>Juros fatura</title>
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -16,13 +17,12 @@
 
                 <h1>Jurosfat</h1>
                 <p>Nunca foi tão fácil entender sobre juros de cartão</p>
+                
+                <form action="./opcoes-pagamento.html" >
+                    <input type="text" name="text_name" id="text_name" placeholder="Nome" required>
 
-                <input type="text" name="text_name" id="text_name" placeholder="Nome" oninput="nameHome(this)" >
-
-                <h2 class="text_input" oninput="nameHome()"></h2>
-               
-                <button class="button enter" onclick="nameAlert()">Entrar</button>
-
+                    <button class="button enter" type="submit" onclick="getName()">Entrar</button>
+                </form>
             </div>
         </div>
     </div>

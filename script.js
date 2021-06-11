@@ -1,11 +1,10 @@
 
 // Get name
-function nameHome(){
-    let name = document.querySelector("#text_name").value
-    document.querySelector('.text_input').innerHTML = `Olá, ${name}!`
+function getName(){
+    var name = document.getElementById("text_name").value
+    localStorage.setItem('inputText', name)
+    return false
 }
-
-
 
 // Open and close popups
 function popUp1(){
@@ -31,7 +30,6 @@ function nameAlert(){
         location.href = "./opcoes-pagamento.html"
     }
 }
-
 
 // Convert to  Real currency
 function realCurrency(number){
@@ -73,7 +71,6 @@ function minimum(){
         
     }
 }
-
 
 // Calcule the late payments rate
 function late(){
@@ -118,5 +115,4 @@ function late(){
     }
     
 }
-    
 

@@ -7,6 +7,7 @@
     <title>Opções de pagamento</title>
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -15,7 +16,9 @@
             <div class="container-blur">
                 <div class="container-content">
 
-                    <h2 >Qual opção de pagamento?</h2>
+                    <h1>Olá, <span id="result"></span>!</h1>
+
+                    <h3>Qual opção de pagamento?</h3>
                     
                     <a href="./pagamento-minimo.html">
                         <button class="button btn-1" >Mínimo</button>
@@ -58,5 +61,8 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('result').innerHTML=  localStorage.getItem("inputText")
+    </script>
 </body>
 </html>
