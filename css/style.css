@@ -1,9 +1,34 @@
 /*Home*/
+.home h1{
+    font-size: 10rem;
+    
+}
+
+.home span{
+    font-size: 4rem;
+    color:#F76C17;
+}
+
+.home p {
+    font-size: 20px;
+    text-transform: none;
+    max-width: 80%;
+}
+
+#square{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    top: 3.5rem;
+    right: 12.3rem;
+    background-color: #F76C17;
+    border-radius: 10px;
+}
 
 #text_name{
     width: 250px;
     margin: 5rem;
-    padding: 10px;
     font-size: 1.2rem;
     border-radius: 0;
     border-bottom: 1px solid white;
