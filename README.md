@@ -30,6 +30,7 @@ No JavaScript, foram criadas as funções:
  - [x] Aperfeiçoando técnica de glassmorphism;
  - [x] Flexbox;
  - [x] Position;
+ - [X] Keyframes;
 
 ## Projeto:
 
