@@ -8,8 +8,8 @@ function getName(){
 
 // Open and close popups
 function popUp1(){
-    let box2 = document.getElementById('popupMinPay')
-    box2.style.display = 'block';
+    let box1 = document.getElementById('popupMinPay')
+    box1.style.display = 'block';
 }
 
 function popUp2(){
@@ -19,16 +19,6 @@ function popUp2(){
 
 function closePopup(btn){
     btn.style.display = "none"
-}
-
-// Requesting to write name
-function nameAlert(){
-    let name = document.querySelector('#text_name').value
-    if (name == '' ){
-        alert('Digite seu nome')
-    } else {
-        location.href = "./opcoes-pagamento.html"
-    }
 }
 
 // Convert to  Real currency

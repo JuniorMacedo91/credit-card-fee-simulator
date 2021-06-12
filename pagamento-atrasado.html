@@ -12,56 +12,55 @@
 <body>
     <div class="main display-flex">
         <div class="container display-flex">
-            <div class="container-blur">
+            <div class="container-box display-flex">
                 <form class="content">
 
-                    <div class="title"><h1>Após vencimento</h1></div>
+                    <span class="title">Após vencimento</span>
     
                     <input type="number" name="totalInvoice" id="totalInvoice" placeholder="valor total da fatura">
                     
                     <p style="font-size: 10px;">Data de vencimento</p>
-                    <input type="date" name="expirationDate" id="expirationDate" style="font-size: 15px;">
+                    <input type="date" name="expirationDate" id="expirationDate">
 
                     <p style="font-size: 10px;">Data de pagamento</p>
-                    <input type="date" name="payDate" id="payDate" style="font-size: 15px;">
+                    <input type="date" name="payDate" id="payDate" >
 
                     <input type="number" name="rate" id="rate" placeholder="juros rotativo">
 
                 </form>
-            </div>
-            <div class="card">
-                <div class="card-content1">
+                <div class="card">
+                    <div class="card-content1">
 
-                    <p class="content-text">total a pagar</p>
-                    <p style="font-size: 1.6rem;" id="totalPay">R$ 0,00</p>
+                        <p class="content-text">Total a pagar</p>
+                        <p style="font-size: 1.6rem;" id="totalPay">R$ 0,00</p>
 
-                    <img class="sim-card" src="./assets/sim-card.png" alt="sim card">
+                        <img class="sim-card" src="./assets/sim-card.png" alt="sim card">
 
-                    <p class="content-text delayDay">Dias em atraso: <span id="delayDay"></span></p>
-                    <p style="font-size: 14px;">1234 5678 9101 1213</p>
-                    <p style="font-size: 14px;"><span id="result"></span></p>
+                        <p class="content-text delayDay">Dias em atraso: <span id="delayDay"></span></p>
+                        <p style="font-size: 14px;">1234 5678 9101 1213</p>
+                        <p style="font-size: 14px;"><span id="result"></span></p>
 
+                    </div>
+                    <div class="card-content2">
+                        
+                        <p class="content-text">IOF</p>
+                        <p id="iof">R$0,00</p>
+
+                        <p class="content-text">Multa</p>
+                        <p id="fee">R$ 0,00</p>
+
+                        <p class="content-text">Juros rotativo</p>
+                        <p id="totalFee">R$ 0,00</p>
+
+                        <p class="content-text">Juros de mora</p>
+                        <p id="dayRate">R$0,00</p>
+
+                        <p class="content-text">Total de juros</p>
+                        <p id="totalRate">R$ 0,00</p>
+                        
+                    </div>
                 </div>
-                <div class="card-content2">
-                    
-                    <p class="content-text">IOF</p>
-                    <p id="iof">R$0,00</p>
-
-                    <p class="content-text">Multa</p>
-                    <p id="fee">R$ 0,00</p>
-
-                    <p class="content-text">juros rotativo</p>
-                    <p id="totalFee">R$ 0,00</p>
-
-                    <p class="content-text">Juros de mora</p>
-                    <p id="dayRate">R$0,00</p>
-
-                    <p class="content-text">total de juros</p>
-                    <p id="totalRate">R$ 0,00</p>
-                    
-                </div>
-            </div>
-            <div class="icons">
+            <div class="icons ">
                 <a href="./index.html"><img src="./assets/home.png" alt="botão home"></a>
                 <a href="./opcoes-pagamento.html"><img src="./assets/back.png" alt="botão voltar"></a>
                 <button class="button" onclick="late()">Simular</button>

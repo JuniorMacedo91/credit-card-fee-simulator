@@ -7,6 +7,7 @@
     <title>Juros fatura</title>
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/keyframes.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -14,10 +15,28 @@
         <div class="container display-flex">
             <div class="container-blur display-flex">
 
-                <h1>J<span>ura</span></h1>
-                <div id="square"></div>
+                <div id="logo-box">
+                    <svg  viewBox="0 0 191 137" fill="none" id="logo-svg" xmlns="http://www.w3.org/2000/svg">
+                        <path id="orange-box" d="M0 13C0 8.58172 3.39566 5 7.58442 5H65.4156C69.6043 5 73 8.58172 73 13V108C73 112.418 69.6043 116 65.4156 116H7.58441C3.39566 116 0 112.418 0 108V13Z" fill="#F76C17"/>
+                        <g filter="url(#filter0_d)">
+                        <path id="letter-j"  d="M27 104.619C31.6531 104.619 36.5976 104.753 38.7873 103.949C41.0682 103.057 42.6193 101.495 43.4404 99.263C44.2615 96.9421 44.6721 93.4162 44.6721 88.6852V5H60V88.9529C60 95.4692 59.3157 100.691 57.9472 104.619C56.5786 108.457 54.1152 111.314 50.5569 113.188C47.0899 115.063 42.2087 116 35.9133 116H27V104.619Z" fill="white"/>
+                        </g>
+                        <path id="letters" d="M98.6504 116.648C94.5704 116.648 91.3784 115.832 89.0744 114.2C86.8184 112.568 85.2584 110.288 84.3944 107.36C83.5304 104.432 83.0984 100.76 83.0984 96.344V57.68H90.8744V96.704C90.8744 101.12 91.3784 104.48 92.3864 106.784C93.4424 109.088 95.5304 110.24 98.6504 110.24C101.77 110.24 103.834 109.088 104.842 106.784C105.898 104.48 106.426 101.12 106.426 96.704V57.68H114.13V96.344C114.13 100.76 113.698 104.432 112.834 107.36C111.97 110.288 110.41 112.568 108.154 114.2C105.898 115.832 102.73 116.648 98.6504 116.648ZM122.696 57.68H134.432C140.336 57.68 144.656 58.904 147.392 61.352C150.176 63.752 151.568 67.688 151.568 73.16C151.568 80.648 149.168 85.184 144.368 86.768L152.648 116H144.8L137.168 88.64H130.832V116H122.696V57.68ZM133.928 82.808C137.432 82.808 139.928 82.112 141.416 80.72C142.952 79.328 143.72 76.808 143.72 73.16C143.72 70.76 143.456 68.888 142.928 67.544C142.4 66.152 141.464 65.144 140.12 64.52C138.776 63.848 136.88 63.512 134.432 63.512H130.832V82.808H133.928ZM169.248 57.68H177.096L189.552 116H181.848L179.184 101.312H167.304L164.496 116H156.864L169.248 57.68ZM178.104 95.48L173.208 69.2L168.384 95.48H178.104Z" fill="black"/>
+                        <defs>
+                        <filter id="filter0_d" x="27" y="0" width="43" height="121" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dx="5"/>
+                        <feGaussianBlur stdDeviation="2.5"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                </div>
 
-                <p>Nunca foi tão fácil entender sobre fatura</p>
+                <p id="slogan">Nunca foi tão fácil entender sobre fatura</p>
                 
                 <form action="./opcoes-pagamento.html" >
                     <input type="text" name="text_name" id="text_name" placeholder="Nome" required>
