@@ -1,7 +1,16 @@
 /*Home*/
-.home h1{
-    font-size: 10rem;
-    
+#logo-box {
+    width: 250px;
+}
+
+#logo-box #letters{
+    fill: white;
+}
+
+#logo-box path{
+    stroke-dashoffset: 0;
+    stroke-dasharray:400;
+    animation: animate-logo 3s 1ms linear;
 }
 
 .home span{
@@ -9,17 +18,17 @@
     color:#F76C17;
 }
 
-.home p {
+#slogan{
     font-size: 20px;
     text-transform: none;
     max-width: 80%;
+    animation: slogan 5s 3ms linear;
 }
 
 #square{
     position: absolute;
     width: 30px;
     height: 30px;
-
     top: 3.5rem;
     right: 12.3rem;
     background-color: #F76C17;
@@ -30,6 +39,7 @@
     width: 250px;
     margin: 5rem;
     font-size: 1.2rem;
+    text-transform: capitalize;
     border-radius: 0;
     border-bottom: 1px solid white;
     background-color: transparent;
@@ -43,7 +53,7 @@
 
 .button:hover{
     background-color: #F76C17;
-    border:2px solid #F76C17;
+    border: 2px solid #F76C17;
     transform: translateY(-10px);
 }
 
@@ -55,6 +65,7 @@
 
 .pay h1{
     font-size: 2.5rem;
+    text-transform: capitalize;
 }
 .pay h3{
     padding: 5rem 0px;
@@ -67,6 +78,7 @@
     font-size: 12px;
     border-radius: 20px;
     background-color: #010B40;
+    display: none;
 }
 
 ul, li{
@@ -74,35 +86,18 @@ ul, li{
     margin-top: 1rem;
 }
 
-#popupMinPay{
-    display: none;
-}
-
-#popupLatePay{
-    display: none;
-}
-
 .pay button{
     margin-top: 1rem;
 }
 
 /*Pagamento mínimo/ Atrasado*/
-
-.main .container-blur{
-    position: absolute;
-    height: 300px;
-    top: 15px;
-}
-
 input{
     width: 90%;
     margin-bottom: 1rem;
     padding: 8px;
-
     border: none;
     outline: none;
     border-radius: 50px;
-
     font-size: 1rem;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.1);
@@ -110,10 +105,20 @@ input{
     backdrop-filter: blur(20px);
 }
 
+.container-box{
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+}
+
 .delayDay{
     position: absolute;
     top: 7px;
     right: 6rem;
+}
+
+#result{
+    text-transform: capitalize;
 }
 
 img{
@@ -135,14 +140,12 @@ img{
 .card-content2 p{
     text-align: right;
 }
-
 .icons{
-    position: absolute;
-    width: 90%;
-    bottom: 3%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
 }
 
 .icons img{
