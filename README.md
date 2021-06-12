@@ -35,7 +35,7 @@ No JavaScript, foram criadas as funções:
 ## Projeto:
 
 <p align="center">
-  <img src="age.gif" width="700px">
+  <img src="jura.gif" width="300px">
 </p>
 
 ## Tecnologias:
