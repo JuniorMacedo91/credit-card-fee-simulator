@@ -10,7 +10,7 @@
 #logo-box path{
     stroke-dashoffset: 0;
     stroke-dasharray:400;
-    animation: animate-logo 3s 1ms linear;
+    animation: animate-logo 3s linear;
 }
 
 .home span{
@@ -22,7 +22,7 @@
     font-size: 20px;
     text-transform: none;
     max-width: 80%;
-    animation: slogan 5s 3ms linear;
+    animation: slogan 3s linear forwards;
 }
 
 #square{
@@ -54,7 +54,7 @@
 .button:hover{
     background-color: #F76C17;
     border: 2px solid #F76C17;
-    transform: translateY(-10px);
+    transform: translateY(-2px);
 }
 
 /*Opções de Pagamento*/
