@@ -75,7 +75,7 @@
 }
 
 ::placeholder{
-    font-size: 12px;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
 }
