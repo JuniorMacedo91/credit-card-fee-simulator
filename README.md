@@ -1,10 +1,14 @@
 # simulador-de-juros
-Projeto desenvolvido para calcular juros de cartão de crédito
+Projeto desenvolvido para calcular juros de cartão de crédito e praticar JavaScript.
 
 ## Descrição:
-A idéia do projeto é facilitar o entendimento de clientes, em relação como funciona o calculo de juros dos cartões de créditos. Trazendo assim, uma previsão de como ficaria o valor de uma fatura em caso de pagamento mínimo ou atraso total da fatura.
+Inicialmente, criei esse projeto no Excel. Tive a idéia quando prestava serviço a um Banco, e durante um atendimento o cliente pediu uma simulação de juros, caso pagasse dias após o vencimento. Não tinha noção sobre o calculo e nem mesmo o sistema para calcular.
 
-Seu objetivo final é garantir um planejamento financeiro.
+Desde então, comecei a pesquisar como era feito esse calculo e criei uma planilha em Excel.
+
+Após um bom conhecimento em programação, através do curso do Programador BR, decidi codar esse projeto.
+
+Hoje, o objetivo é facilitar o entendimento de clientes, em relação como funciona o calculo de juros dos cartões de créditos. Trazendo assim, uma previsão de como ficaria o valor de uma fatura em caso de pagamento mínimo ou atraso total da fatura.
 
 ## Como usar:
 
