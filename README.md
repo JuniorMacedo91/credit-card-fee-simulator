@@ -1,6 +1,9 @@
 # simulador-de-juros
 Projeto desenvolvido para calcular juros de cartão de crédito e praticar JavaScript.
 
+## Deploy:
+https://juniormacedo91.github.io/simulador-de-juros/
+
 ## Descrição:
 Inicialmente, criei esse projeto no Excel. Tive a idéia quando prestava serviço a um Banco, e durante um atendimento o cliente pediu uma simulação de juros, caso pagasse dias após o vencimento. Não tinha noção sobre o calculo e nem mesmo o sistema para calcular.
 
@@ -49,5 +52,3 @@ No JavaScript, foram criadas as funções:
 [![JavaScript](https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=javascript&labelColor=black)](https://github.com/JuniorMacedo91)
 [![Figma](https://img.shields.io/badge/figma-teal?style=for-the-badge&logo=figma&labelColor=black)](https://github.com/JuniorMacedo91)
 
-## Site:
-https://juniormacedo91.github.io/simulador-de-juros/
